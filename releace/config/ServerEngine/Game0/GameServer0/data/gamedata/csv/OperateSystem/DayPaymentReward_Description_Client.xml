@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<client>
+<Version VersionNO="1"/>
+
+<DayPaymentReward>
+  <DataRes xmlName="m_ID" excelName="½±Àøid" DataType="ID"/>
+  <DataRes xmlName="m_Reward_1" excelName="½±Àø1" DataType="String"/>
+  <DataRes xmlName="m_Reward_2" excelName="½±Àø2" DataType="String"/>
+  <DataRes xmlName="m_Reward_3" excelName="½±Àø3" DataType="String"/>  
+  <DataRes xmlName="m_Reward_4" excelName="½±Àø4" DataType="String"/>  
+  <DataRes xmlName="m_Reward_5" excelName="½±Àø5" DataType="String"/>  
+  <DataRes xmlName="m_Reward_6" excelName="½±Àø6" DataType="String"/>
+</DayPaymentReward>
+
+</client>

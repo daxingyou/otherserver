@@ -1,0 +1,14 @@
+key,value,type
+string,int,string
+攻击,1,int
+生命,2,int
+命中,3,int
+闪避,4,int
+抵挡,5,int
+破击,6,int
+暴击,7,int
+韧性,8,int
+护甲,9,int
+破甲,10,int
+怒气,11,int
+经验,12,int

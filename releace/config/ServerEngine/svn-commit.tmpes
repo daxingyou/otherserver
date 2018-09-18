@@ -1,0 +1,22 @@
+
+--This line, and those below, will be ignored--
+
+M    Game0/GameServer0/GameServer.conf
+M    Game0/GameServer0/GameServer.config.conf
+M    Game0/LegionNameDbAccessServer/start.sh
+M    Game0/RoleServer0/start.sh
+M    RouterServer/RouterServer.conf
+M    redis/redis-convertcode/log/redis-server.log
+M    redis/redis-fightdata0/dump.rdb
+M    redis/redis-fightdata0/log/redis-server.log
+M    redis/redis-legion0/dump.rdb
+M    redis/redis-legion0/log/redis-server.log
+M    redis/redis-legionname/log/redis-server.log
+M    redis/redis-name/log/redis-server.log
+M    redis/redis-name/name.rdb
+M    redis/redis-payreturnserver/log/redis-server.log
+M    redis/redis-role0/log/redis-server.log
+M    redis/redis-snapshot/dump.rdb
+M    redis/redis-snapshot/log/redis-server.log
+M    run.sh
+AM   stop.sh
