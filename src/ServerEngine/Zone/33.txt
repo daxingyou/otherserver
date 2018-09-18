@@ -1,0 +1,909 @@
+
+==================================================
+[proxy config]:              
+locator                      
+sync-invoke-timeout          
+async-invoke-timeout         
+refresh-endpoint-interval    
+stat                         
+property                     
+report-interval              
+sample-rate                  
+max-sample-count             
+sendthread                   
+recvthread                   
+asyncthread                  
+modulename                   
+--------------------------------------------------
+[server config]:             
+Application                  ServerEngine
+ServerName                   GameServer0
+BasePath                     .//
+DataPath                     /root/game/server/data/data_unicode/
+LocalIp                      172.24.162.50
+Local                        
+LogPath                      /home/mage/Desktop/ServerEngine/log/
+LogSize                      52428800
+LogNum                       10
+Log                          
+Node                         
+Config                       
+Notify                       
+CloseCout                    0
+ReportFlow                   1
+--------------------------------------------------
+[set file cache ]            OK
+--------------------------------------------------
+[set roll logger]            OK
+--------------------------------------------------
+[set time logger]            OK
+--------------------------------------------------
+[set remote config]          OK
+--------------------------------------------------
+[set remote notify]          OK
+--------------------------------------------------
+[set node proxy]             OK
+--------------------------------------------------
+[set admin adapter]          OK
+name                         GameServer0
+servant                      ServerEngine.GameServer0.GameObj
+endpoint                     tcp -h 127.0.0.1 -p 22644 -t 120000
+maxconns                     4096
+queuecap                     1024
+queuetimeout                 10000ms
+order                        allow,deny
+allow                        
+deny                         
+queuesize                    0
+connections                  0
+protocol                     taf
+handlegroup                  GameServer0
+handlethread                 1
+shmkey                       0
+shmcap                       0
+--------------------------------------------------
+
+[initialize server] ......... [Done]
+==================================================
+111
+222
+initialize----------------0
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Skill/Buff.csv
+fieldname set:0,0,×´Ì¬ID
+fieldname set:1,1,×´Ì¬Ãû³Æ
+fieldname set:2,2,ÌØĞ§×ÊÔ´
+fieldname set:3,3,×´Ì¬ÏµÁĞ
+fieldname set:4,4,×´Ì¬ÀàĞÍ
+fieldname set:5,5,³ÖĞø»ØºÏ
+fieldname set:6,6,ÊÇ·ñĞĞ¶¯ºó¼ÆÊı
+fieldname set:7,7,×î´óµş¼ÓÊı
+fieldname set:8,8,²»¿É³·Ïú³õÊ¼Ğ§¹û1
+fieldname set:9,9,²»¿É³·Ïú³õÊ¼Ğ§¹û2
+fieldname set:10,10,²»¿É³·Ïú³õÊ¼Ğ§¹û3
+fieldname set:11,11,²»¿É³·Ïú³õÊ¼Ğ§¹û4
+fieldname set:12,12,ÆÕÍ¨Ğ§¹û1
+fieldname set:13,13,ÆÕÍ¨Ğ§¹û2
+fieldname set:14,14,ÆÕÍ¨Ğ§¹û3
+fieldname set:15,15,ÆÕÍ¨Ğ§¹û4
+fieldname set:16,16,¼ä¸ôÉúĞ§»ØºÏ
+fieldname set:17,17,¼ä¸ôĞ§¹û1
+fieldname set:18,18,¼ä¸ôĞ§¹û2
+fieldname set:19,19,¼ä¸ôĞ§¹û3
+fieldname set:20,20,¼ä¸ôĞ§¹û4
+fieldname set:21,21,ÌØÊâÌõ¼ş1
+fieldname set:22,22,ÌØÊâÌõ¼ş2
+fieldname set:23,23,ÌØÊâÌõ¼ş3
+fieldname set:24,24,ÌØÊâÌõ¼ş4
+fieldname set:25,25,ÌØÊâĞ§¹û
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Skill/ActorSkill.csv
+fieldname set:0,0,¼¼ÄÜID
+fieldname set:1,1,ÏûºÄÄÜÁ¿
+fieldname set:2,2,Ğ§¹û
+fieldname set:3,3,Í¼±ê
+fieldname set:4,4,¿ªÆôµÈ¼¶
+fieldname set:5,5,¼¼ÄÜÃû³Æ
+fieldname set:6,6,¼¼ÄÜÃèÊö
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Skill/Skill.csv
+fieldname set:0,0,¼¼ÄÜID
+fieldname set:1,1,¼¼ÄÜÆ·ÖÊ
+fieldname set:2,2,¿ªÆôÆ·ÖÊ
+fieldname set:3,3,¿ªÆôµÈ½×
+fieldname set:4,4,¼¼ÄÜÃû
+fieldname set:5,5,¼¼ÄÜÃûÒ»
+fieldname set:6,6,¼¼ÄÜÃû¶ş
+fieldname set:7,7,¼¼ÄÜ¼òÊö
+fieldname set:8,8,¼¼ÄÜÃèÊö
+fieldname set:9,9,¼¼ÄÜÀàĞÍ
+fieldname set:10,10,ÊÇ·ñ½üÕ½¼¼ÄÜ
+fieldname set:11,11,±¸×¢
+fieldname set:12,12,¶à¶Î¹¥»÷
+fieldname set:13,13,Á¬»÷¼¼ÄÜ
+fieldname set:14,14,¼¼ÄÜÏµÁĞ
+fieldname set:15,15,¼¼ÄÜµÈ¼¶
+fieldname set:16,16,¼¼ÄÜ×î¸ßµÈ¼¶
+fieldname set:17,17,Í¼±ê×ÊÔ´ID
+fieldname set:18,18,¼¼ÄÜÌØĞ§
+fieldname set:19,19,ÌØÊâÌõ¼ş
+fieldname set:20,20,¼¼ÄÜĞ§¹û1
+fieldname set:21,21,¼¼ÄÜĞ§¹û2
+fieldname set:22,22,¼¼ÄÜĞ§¹û3
+fieldname set:23,23,¼¼ÄÜĞ§¹û4
+fieldname set:24,24,Å­ÆøÌõ¼ş
+fieldname set:25,25,ÏûºÄÅ­Æø
+fieldname set:26,26,¿É±»·´»÷
+fieldname set:27,27,Ğ¡¼¼ÄÜ¸ÅÂÊ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Skill/Relive.csv
+fieldname set:0,0,µÈ½×
+fieldname set:1,1,¸´»îHPÍò·İ±È
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Skill/SkillNotifyProp.csv
+fieldname set:0,0,ÊôĞÔ
+fieldname set:1,1,Í¨ÖªÊôĞÔ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Skill/SkillEffect.csv
+fieldname set:0,0,Ğ§¹ûID
+fieldname set:1,1,ÃèÊö
+fieldname set:2,2,Í³Ò»Ä¿±ê
+fieldname set:3,3,Ğ§¹û1
+fieldname set:4,4,Ğ§¹û2
+fieldname set:5,5,Ğ§¹û3
+fieldname set:6,6,Ğ§¹û4
+fieldname set:7,7,Ğ§¹û5
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Hero/HeroCreate.csv
+fieldname set:0,0,ID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,Ó¢ĞÛÌØµã
+fieldname set:3,3,Ó¢ĞÛ¾ø¼¼
+fieldname set:4,4,Ó¢ĞÛĞÎÏñ1
+fieldname set:5,5,Ó¢ĞÛĞÎÏñ2
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/BuyPhyCost.csv
+fieldname set:0,0,µÚ¼¸´Î
+fieldname set:1,1,ÏûºÄÔª±¦
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/BuyPhyLimit.csv
+fieldname set:0,0,VIPµÈ¼¶
+fieldname set:1,1,´ÎÊıÏŞÖÆ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/OpenFunction.csv
+fieldname set:0,0,funcID
+fieldname set:1,1,openLevel
+fieldname set:2,2,ÏÔÊ¾Í¼±ê
+fieldname set:3,3,erroID
+fieldname set:4,4,ÃèÊö
+fieldname set:5,5,ÊÇ·ñÒıµ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Hero/Hero.csv
+fieldname set:0,0,ID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,»êÆÇÃèÊö
+fieldname set:3,3,ÕÙ»½ËùĞèÍ­±Ò
+fieldname set:4,4,Ó¢ĞÛ»êÆÇÎïÆ·ID
+fieldname set:5,5,ÕÙ»½ËùĞè»êÆÇ
+fieldname set:6,6,³õÊ¼ĞÇ¼¶
+fieldname set:7,7,³õÊ¼Æ·ÖÊ
+fieldname set:8,8,ĞÔ±ğ
+fieldname set:9,9,ÉúÃü
+fieldname set:10,10,¹¥»÷
+fieldname set:11,11,·ÀÓù
+fieldname set:12,12,ÃüÖĞ
+fieldname set:13,13,ÉÁ±Ü
+fieldname set:14,14,±©»÷
+fieldname set:15,15,ÈÍĞÔ
+fieldname set:16,16,µÖµ²
+fieldname set:17,17,ÆÆ»÷
+fieldname set:18,18,»¤¼×
+fieldname set:19,19,ÆÆ¼×
+fieldname set:20,20,³õÊ¼Å­Æø
+fieldname set:21,21,ÉúÃü³É³¤
+fieldname set:22,22,¹¥»÷³É³¤
+fieldname set:23,23,·ÀÓù³É³¤
+fieldname set:24,24,Ó¢ĞÛÃèÊö
+fieldname set:25,25,Ó¢ĞÛÍ·Ïñ
+fieldname set:26,26,Ó¢ĞÛĞÎÏñ1
+fieldname set:27,27,Ó¢ĞÛĞÎÏñ2
+fieldname set:28,28,Ó¢ĞÛÖ°Òµ
+fieldname set:29,29,¼¼ÄÜÁĞ±í
+fieldname set:30,30,Ìì¸³¼¼ÄÜÁĞ±í
+fieldname set:31,31,¶¯»­Ãû
+fieldname set:32,32,¶¯»­Ëõ·Å
+fieldname set:33,33,Ó¢ĞÛÀàĞÍ
+fieldname set:34,34,³õÊ¼¼¼ÄÜ
+fieldname set:35,35,¹¥»÷ÄÜÁ¦
+fieldname set:36,36,·ÀÓùÄÜÁ¦
+fieldname set:37,37,ÉúÃüÄÜÁ¦
+fieldname set:38,38,Ó¢ĞÛ¶¨Î»
+fieldname set:39,39,Ó¢ĞÛÌØµã
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Monster/MonsterGroup.csv
+fieldname set:0,0,×éID
+fieldname set:1,1,×éÃû³Æ
+fieldname set:2,2,ÏÔÊ¾¹Ö
+fieldname set:3,3,±¸×¢
+fieldname set:4,4,1ºÅÎ»³ÉÔ±
+fieldname set:5,5,2ºÅÎ»³ÉÔ±
+fieldname set:6,6,3ºÅÎ»³ÉÔ±
+fieldname set:7,7,4ºÅÎ»³ÉÔ±
+fieldname set:8,8,5ºÅÎ»³ÉÔ±
+fieldname set:9,9,6ºÅÎ»³ÉÔ±
+fieldname set:10,10,7ºÅÎ»³ÉÔ±
+fieldname set:11,11,8ºÅÎ»³ÉÔ±
+fieldname set:12,12,9ºÅÎ»³ÉÔ±
+fieldname set:13,13,ÉñÊŞÎ»ÖÃ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Monster/Monster.csv
+fieldname set:0,0,¹ÖÎïID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,ÏÔÊ¾Ãû
+fieldname set:3,3,ĞÔ±ğ
+fieldname set:4,4,¹ÖÎïµÈ½×
+fieldname set:5,5,¹ÖÎïÀàĞÍ
+fieldname set:6,6,Í·Ïñ×ÊÔ´ID
+fieldname set:7,7,×ÊÔ´
+fieldname set:8,8,µÈ¼¶
+fieldname set:9,9,ÊÇ·ñ¶¯Ì¬µÈ¼¶
+fieldname set:10,10,Ö÷¶¯¼¼ÄÜ
+fieldname set:11,11,ÆÕ¹¥¼¼ÄÜ
+fieldname set:12,12,Ìì¸³¼¼ÄÜ
+fieldname set:13,13,·Å´ó±ÈÀı
+fieldname set:14,14,ÉúÃü
+fieldname set:15,15,¹¥»÷
+fieldname set:16,16,ÃüÖĞ
+fieldname set:17,17,ÉÁ±Ü
+fieldname set:18,18,±©»÷
+fieldname set:19,19,ÈÍĞÔ
+fieldname set:20,20,µÖµ²
+fieldname set:21,21,ÆÆ»÷
+fieldname set:22,22,»¤¼×
+fieldname set:23,23,ÆÆ¼×
+fieldname set:24,24,³õÊ¼Å­Æø
+fieldname set:25,25,ÀàĞÍ
+csv file name=/root/game/server/data/data_unicode//propcsv/EntityProperty.csv
+fieldname set:0,0,key
+fieldname set:1,1,value
+fieldname set:2,2,type
+csv file name=/root/game/server/data/data_unicode//propcsv/EntityProperty.csv
+fieldname set:0,0,key
+fieldname set:1,1,value
+fieldname set:2,2,type
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/ClientVersion.csv
+fieldname set:0,0,°æ±¾ÀàĞÍ
+fieldname set:1,1,°æ±¾ËµÃ÷
+fieldname set:2,2,×ÊÔ´md5ÎÄ¼ş
+fieldname set:3,3,°æ±¾Ãû×Ö
+fieldname set:4,4,×îµÍÊÊºÏ°æ±¾
+fieldname set:5,5,×î¸ßÊÊºÏ°æ±¾
+fieldname set:6,6,µ±Ç°°æ±¾ºÅ
+fieldname set:7,7,ÏÂÔØÁ´½Ó
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/Global.csv
+fieldname set:0,0,Ãû×Ö
+fieldname set:1,1,ÊıÖµ
+fieldname set:2,2,±¸×¢
+fieldname set:3,3,³ÌĞòÃû
+fieldname set:4,4,³ÌĞòID
+fieldname set:5,5,
+string,utf8string,,string,int,
+¹Ø¿¨ÏûºÄÌåÁ¦,6,,,,
+
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/ReservedWords.csv
+fieldname set:0,0,ReservedWords
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/ErrorCode.csv
+fieldname set:0,0,´íÎóÖµ
+fieldname set:1,1,´íÎóÃèÊö
+fieldname set:2,2,ÀàĞÍ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Scene/SceneSection.csv
+fieldname set:0,0,ÕÂ½ÚID
+fieldname set:1,1,ÀàĞÍ
+fieldname set:2,2,Ãû³Æ
+fieldname set:3,3,ĞòºÅ
+fieldname set:4,4,¿ªÆôµÈ¼¶
+fieldname set:5,5,¹Ø¿¨ÁĞ±í
+fieldname set:6,6,ÍêÃÀÍ¨¹Ø½±Àø
+fieldname set:7,7,ÕÂ½ÚÃèÊö
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Scene/Scene.csv
+fieldname set:0,0,ID
+fieldname set:1,1,¹Ø¿¨Ãû
+fieldname set:2,2,¹Ø¿¨¹ÖÎï
+fieldname set:3,3,Ó¢ĞÛ±³°üÎ´Âú
+fieldname set:4,4,Í¨¹Ø¾­Ñé
+fieldname set:5,5,Ó¢ĞÛĞŞÎª
+fieldname set:6,6,Í¨¹ØÒøÁ½
+fieldname set:7,7,¹Ø¿¨µôÂä
+fieldname set:8,8,µØÍ¼Â·¾¶
+fieldname set:9,9,¹Ø¿¨Í¼Æ¬
+fieldname set:10,10,Ê×´ÎÈıĞÇÍ¨¹ØµôÂä
+fieldname set:11,11,Ê×´ÎµôÂä
+fieldname set:12,12,¿ª³¡¶Ô»°
+fieldname set:13,13,ÊÇ·ñ¿ª³¡²¥·Å
+fieldname set:14,14,¹Ø¿¨ÃèÊö
+fieldname set:15,15,µôÂä
+fieldname set:16,16,ÏŞÖÆÍ¨¹Ø´ÎÊı
+fieldname set:17,17,ÌåÁ¦ÏûºÄ
+fieldname set:18,18,·­¿¨¸ÅÂÊ
+fieldname set:19,19,·­¿¨¾«Ó¢×°±¸
+fieldname set:20,20,·­¿¨ÆÕÍ¨×°±¸
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Scene/PerfectPassAward.csv
+fieldname set:0,0,ÍêÃÀÍ¨¹Ø½±ÀøID
+fieldname set:1,1,½±ÀøÀàĞÍ
+fieldname set:2,2,½±ÀøID
+fieldname set:3,3,ÊıÁ¿
+fieldname set:4,4,µÈ½×
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/Item.csv
+fieldname set:0,0,µÀ¾ßID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,ÀàĞÍ
+fieldname set:3,3,µÈ¼¶ÏŞÖÆ
+fieldname set:4,4,Æ·ÖÊ
+fieldname set:5,5,Ê¹ÓÃĞ§¹û
+fieldname set:6,6,³öÊÛÀàĞÍ
+fieldname set:7,7,¶ÑµşÉÏÏŞ
+fieldname set:8,8,Í¼±ê
+fieldname set:9,9,¹¦ÄÜÃèÊö
+fieldname set:10,10,ÏêÏ¸ÃèÊö
+fieldname set:11,11,ÎïÆ·Âô³öµ¥¼Û
+fieldname set:12,12,µôÂäµØµã
+fieldname set:13,13,ÌØÊâµôÂäµØµã
+fieldname set:14,14,Ï²ºÃÆ·ÊôĞÔ
+fieldname set:15,15,ÊôĞÔÕ¹Ê¾
+fieldname set:16,16,Àñ°üµôÂäID
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/EquipRonglianLvKey.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,²ÎÊı
+fieldname set:2,2,¼Û¸ñÏµÊı
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/EquipRonglianQuality.csv
+fieldname set:0,0,Æ·ÖÊ
+fieldname set:1,1,²ÎÊı
+fieldname set:2,2,¼Û¸ñÏµÊı
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/EquipRonglianMap.csv
+fieldname set:0,0,µÈ¼¶²¿Î»
+fieldname set:1,1,À¶É«Æ·ÖÊ
+fieldname set:2,2,×ÏÉ«Æ·ÖÊ
+fieldname set:3,3,³ÈÉ«Æ·ÖÊ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/EquipXilian.csv
+fieldname set:0,0,²¿Î»
+fieldname set:1,1,ÊôĞÔ
+fieldname set:2,2,ÊôĞÔ¸ÅÂÊ
+fieldname set:3,3,ÊôĞÔÉÏÏŞ
+fieldname set:4,4,ÊôĞÔÑÕÉ«»®·Ö
+fieldname set:5,5,¸ÅÂÊ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/Equip.csv
+fieldname set:0,0,µÀ¾ßID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,×°±¸ÃèÊö
+fieldname set:3,3,µÈ¼¶ÏŞÖÆ
+fieldname set:4,4,×°±¸²¿Î»
+fieldname set:5,5,Ö°ÒµÏŞÖÆ
+fieldname set:6,6,Æ·ÖÊ
+fieldname set:7,7,µÈ½×
+fieldname set:8,8,Í¼±ê
+fieldname set:9,9,»ù´¡ÊôĞÔ
+fieldname set:10,10,ÌØÊâÊôĞÔ
+fieldname set:11,11,Ëæ»úÊôĞÔ×é
+fieldname set:12,12,×°±¸³öÊÛÀàĞÍ
+fieldname set:13,13,×°±¸³öÊÛ¼Û¸ñ
+fieldname set:14,14,µôÂäµØµã
+fieldname set:15,15,Ç¿»¯ÏûºÄÏµÊı
+fieldname set:16,16,ÌØÊâµôÂäµØµã
+fieldname set:17,17,Õ¹Ê¾ÊôĞÔ
+fieldname set:18,18,×°±¸ÆÀ·Ö
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/EquipCombine.csv
+fieldname set:0,0,²ÄÁÏID
+fieldname set:1,1,²ÄÁÏÊıÁ¿
+fieldname set:2,2,²ú³öID
+fieldname set:3,3,ÏûºÄÍ­±Ò
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/EquipSuit.csv
+fieldname set:0,0,Ì××°ID
+fieldname set:1,1,Ì××°Ãû³Æ
+fieldname set:2,2,Ì××°ÁĞ±í
+fieldname set:3,3,2¼şÊôĞÔ
+fieldname set:4,4,2¼şÊôĞÔÃèÊö
+fieldname set:5,5,3¼şÊôĞÔ
+fieldname set:6,6,3¼şÊôĞÔÃèÊö
+fieldname set:7,7,4¼şÊôĞÔ
+fieldname set:8,8,4¼şÊôĞÔÃèÊö
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/EquipEnhance.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,ÊôĞÔ¼Ó³É±ÈÀı
+fieldname set:2,2,Ç¿»¯Ïû»¯
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/EquipRandomProp.csv
+fieldname set:0,0,ÊôĞÔ×éID
+fieldname set:1,1,Ëæ»úÊôĞÔ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/RandomPropShow.csv
+fieldname set:0,0,ÊôĞÔÃû
+fieldname set:1,1,ÏÔÊ¾LifeAttÃû³Æ
+csv file name=/root/game/server/data/data_unicode//propcsv/ItemProperty.csv
+fieldname set:0,0,key
+fieldname set:1,1,value
+fieldname set:2,2,type
+csv file name=/root/game/server/data/data_unicode//propcsv/ItemProperty.csv
+fieldname set:0,0,key
+fieldname set:1,1,value
+fieldname set:2,2,type
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/Drop.csv
+fieldname set:0,0,µôÂäID
+fieldname set:1,1,´ÎÊı
+fieldname set:2,2,ÀàĞÍId
+fieldname set:3,3,ÊıÁ¿
+fieldname set:4,4,»úÂÊ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/Exp.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,¾­Ñé
+fieldname set:2,2,ÌåÁ¦
+fieldname set:3,3,ĞŞÎª
+fieldname set:4,4,Ó¢ĞÛ
+fieldname set:5,5,µÀ¾ß
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/FightSoul/FightSoul.csv
+fieldname set:0,0,ID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,Æ·ÖÊ
+fieldname set:3,3,ÀàĞÍID
+fieldname set:4,4,³õÊ¼¾­Ñé
+fieldname set:5,5,1¼¶ÊôĞÔ
+fieldname set:6,6,2¼¶ÊôĞÔ
+fieldname set:7,7,3¼¶ÊôĞÔ
+fieldname set:8,8,4¼¶ÊôĞÔ
+fieldname set:9,9,5¼¶ÊôĞÔ
+fieldname set:10,10,6¼¶ÊôĞÔ
+fieldname set:11,11,7¼¶ÊôĞÔ
+fieldname set:12,12,8¼¶ÊôĞÔ
+fieldname set:13,13,9¼¶ÊôĞÔ
+fieldname set:14,14,10¼¶ÊôĞÔ
+fieldname set:15,15,11¼¶ÊôĞÔ
+fieldname set:16,16,12¼¶ÊôĞÔ
+fieldname set:17,17,13¼¶ÊôĞÔ
+fieldname set:18,18,14¼¶ÊôĞÔ
+fieldname set:19,19,15¼¶ÊôĞÔ
+fieldname set:20,20,16¼¶ÊôĞÔ
+fieldname set:21,21,17¼¶ÊôĞÔ
+fieldname set:22,22,18¼¶ÊôĞÔ
+fieldname set:23,23,19¼¶ÊôĞÔ
+fieldname set:24,24,20¼¶ÊôĞÔ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/FightSoul/FightSoulExp.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,ÂÌÉ«¾­Ñé
+fieldname set:2,2,À¶É«¾­Ñé
+fieldname set:3,3,×ÏÉ«¾­Ñé
+fieldname set:4,4,½ğÉ«¾­Ñé
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/FightSoul/FightSoulPractice.csv
+fieldname set:0,0,ĞŞÁ¶¾³½ç
+fieldname set:1,1,ĞŞÁ¶ÀàĞÍ
+fieldname set:2,2,Îä»ê»ñÈ¡
+fieldname set:3,3,¾³½çÌáÉı¼¸ÂÊ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/FightSoul/FightSoulExchange.csv
+fieldname set:0,0,ID
+fieldname set:1,1,Îä»êID
+fieldname set:2,2,ĞèÇóËéÆ¬
+fieldname set:3,3,ÃèÊö
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Hero/LevelStepGrow.csv
+fieldname set:0,0,ID
+fieldname set:1,1,½ø¶È
+fieldname set:2,2,ÏµÊı
+fieldname set:3,3,ÊôĞÔÏµÊı
+fieldname set:4,4,ÏûºÄ»êÆÇÊıÁ¿
+fieldname set:5,5,ĞèÒªÍ­±Ò
+fieldname set:6,6,×ª»¯»êÆÇÊı
+fieldname set:7,7,Ó¢ĞÛÆ·ÖÊ
+fieldname set:8,8,Ó¢ĞÛ½×¶Î
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Hero/HeroConvert.csv
+fieldname set:0,0,ID
+fieldname set:1,1,×ª»»ÁĞ±í
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Hero/HeroLevelExp.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,ĞŞÎª
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/GodAnimal/GodAnimal.csv
+fieldname set:0,0,ID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,ÉúÃü
+fieldname set:3,3,¹¥»÷
+fieldname set:4,4,ÃüÖĞ
+fieldname set:5,5,±©»÷
+fieldname set:6,6,ÆÆ»÷
+fieldname set:7,7,³õÊ¼Å­Æø
+fieldname set:8,8,ÉúÃü³É³¤
+fieldname set:9,9,¹¥»÷³É³¤
+fieldname set:10,10,ÃüÖĞ³É³¤
+fieldname set:11,11,±©»÷³É³¤
+fieldname set:12,12,ÆÆ»÷³É³¤
+fieldname set:13,13,ÉñÊŞÃèÊö
+fieldname set:14,14,ÉñÊŞÍ·Ïñ
+fieldname set:15,15,ÉñÊŞĞÎÏñ1
+fieldname set:16,16,ÉñÊŞĞÎÏñ2
+fieldname set:17,17,¼¼ÄÜÁĞ±í
+fieldname set:18,18,¶¯»­Ãû
+fieldname set:19,19,¶¯»­Ëõ·Å
+fieldname set:20,20,¶Ò»»ItemID
+fieldname set:21,21,¶Ò»»ÊıÁ¿
+fieldname set:22,22,¼¤»îÌõ¼ş
+fieldname set:23,23,¼¤»î»¨·Ñ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/GodAnimal/GodAnimalLevelExp.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,Éı¼¶¾­Ñé
+fieldname set:2,2,µÈ½×ÏŞÖÆ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/GodAnimal/GoldAnimaLevelStep.csv
+fieldname set:0,0,µÈ½×
+fieldname set:1,1,ÏûºÄ²ÄÁÏÊı
+fieldname set:2,2,³É³¤ÏµÊı
+fieldname set:3,3,ÊôĞÔÏµÊı
+fieldname set:4,4,Éı½×ÏûºÄ
+csv file name=/root/game/server/data/data_unicode//propcsv/FightSoulProperty.csv
+fieldname set:0,0,key
+fieldname set:1,1,value
+fieldname set:2,2,type
+csv file name=/root/game/server/data/data_unicode//propcsv/FightSoulProperty.csv
+fieldname set:0,0,key
+fieldname set:1,1,value
+fieldname set:2,2,type
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Manor/Machine.csv
+fieldname set:0,0,ÕÊºÅ
+fieldname set:1,1,Ãû×Ö
+fieldname set:2,2,³õÊ¼Ó¢ĞÛ
+fieldname set:3,3,µ±Ç°Í­±Ò³õÊ¼´¢Á¿
+fieldname set:4,4,µ±Ç°ĞŞÎª³õÊ¼´¢Á¿
+fieldname set:5,5,µÈ¼¶
+fieldname set:6,6,½ğ¿óµÈ¼¶
+fieldname set:7,7,ĞŞÎª¿óµÈ¼¶
+fieldname set:8,8,³õÊ¼¾º¼¼³¡
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/ClimbTower/climbtower.csv
+fieldname set:0,0,²ãÊı
+fieldname set:1,1,¹ÖÎï×éID
+fieldname set:2,2,ĞŞÎª½±Àø
+fieldname set:3,3,µôÂäID
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/RandHero.csv
+fieldname set:0,0,Ó¢ĞÛID
+fieldname set:1,1,µÈ½×
+fieldname set:2,2,»úÂÊ
+fieldname set:3,3,³éÈ¡ÀàĞÍ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/RandItem.csv
+fieldname set:0,0,ÎïÆ·ID
+fieldname set:1,1,ÊÇÎä»ê
+fieldname set:2,2,Æ·ÖÊ
+fieldname set:3,3,¸ÅÂÊ
+fieldname set:4,4,ÊıÁ¿
+fieldname set:5,5,³éÈ¡ÀàĞÍ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/HonorGoods.csv
+fieldname set:0,0,ÉÌÆ·ID
+fieldname set:1,1,ÉÌÆ·ÀàĞÍ
+fieldname set:2,2,×îµÍ¾üÍÅµÈ¼¶¿ª·Å
+fieldname set:3,3,ID
+fieldname set:4,4,ÉÌÆ·ÊıÁ¿
+fieldname set:5,5,ÏûºÄÀàĞÍ
+fieldname set:6,6,ÉÌÆ·¼Û¸ñ
+fieldname set:7,7,ÃèÊö
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/HonorShop.csv
+fieldname set:0,0,ÉÌµêID
+fieldname set:1,1,ÉÌµêÀàĞÍ
+fieldname set:2,2,ÉÌµê»ñÈ¡µÈ¼¶
+fieldname set:3,3,Îä»êÉÌµêÁĞ±í
+fieldname set:4,4,×°±¸ÁĞ±í
+fieldname set:5,5,Ï²ºÃÆ·ÁĞ±í
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/HonorShopRefreshCost.csv
+fieldname set:0,0,Ë¢ĞÂ´ÎÊı
+fieldname set:1,1,Ë¢ĞÂÏûºÄ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/RandTemplate.csv
+fieldname set:0,0,Ä£°åID
+fieldname set:1,1,Ó¢ĞÛ
+fieldname set:2,2,ÎïÆ·
+fieldname set:3,3,×°±¸
+fieldname set:4,4,¸ÅÂÊ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/Payment.csv
+fieldname set:0,0,ID
+fieldname set:1,1,³äÖµID
+fieldname set:2,2,»ñµÃÓÎÏ·±Ò
+fieldname set:3,3,Ê×´Î³äÖµÔùËÍ
+fieldname set:4,4,ÃèÊö
+fieldname set:5,5,ÃèÊö2
+fieldname set:6,6,ÊÇ·ñÍÆ¼ö
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/VipRand.csv
+fieldname set:0,0,Ó¢ĞÛID
+fieldname set:1,1,ÊÇÓ¢ĞÛ
+fieldname set:2,2,Æ·ÖÊ
+fieldname set:3,3,µÈ½×
+fieldname set:4,4,ÊıÁ¿
+fieldname set:5,5,»úÂÊ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Legion/LegionBless.csv
+fieldname set:0,0,ID
+fieldname set:1,1,Òø±Ò
+fieldname set:2,2,½ğ±Ò
+fieldname set:3,3,¹±Ï×
+fieldname set:4,4,»ñµÃÌåÁ¦
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Legion/LegionContribute.csv
+fieldname set:0,0,ID
+fieldname set:1,1,Òø±Ò
+fieldname set:2,2,½ğ±Ò
+fieldname set:3,3,¹±Ï×
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Legion/LegionLevelExp.csv
+fieldname set:0,0,¾üÍÅµÈ¼¶
+fieldname set:1,1,¾­Ñé
+fieldname set:2,2,ÍÅ³¤Êı
+fieldname set:3,3,¸±ÍÅ³¤Êı
+fieldname set:4,4,³ÉÔ±ÉÏÏŞ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Legion/LegionPay.csv
+fieldname set:0,0,¹±Ï×Çø¼ä
+fieldname set:1,1,¼Ó³ÉÏµÊı
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Legion/LegionShop.csv
+fieldname set:0,0,ID
+fieldname set:1,1,ÀàĞÍId
+fieldname set:2,2,ÊıÁ¿
+fieldname set:3,3,È¨ÖØ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Hero/QualityProp.csv
+fieldname set:0,0,Æ·ÖÊID
+fieldname set:1,1,ÊôĞÔÏµÊı
+fieldname set:2,2,ÑÕÉ«
+fieldname set:3,3,½×¶Î
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Hero/HeroQuality.csv
+fieldname set:0,0,Ó¢ĞÛID
+fieldname set:1,1,Æ·ÖÊ1
+fieldname set:2,2,Æ·ÖÊ2
+fieldname set:3,3,Æ·ÖÊ3
+fieldname set:4,4,Æ·ÖÊ4
+fieldname set:5,5,Æ·ÖÊ5
+fieldname set:6,6,Æ·ÖÊ6
+fieldname set:7,7,Æ·ÖÊ7
+fieldname set:8,8,Æ·ÖÊ8
+fieldname set:9,9,Æ·ÖÊ9
+fieldname set:10,10,Æ·ÖÊ10
+fieldname set:11,11,Æ·ÖÊ11
+fieldname set:12,12,Æ·ÖÊ12
+fieldname set:13,13,Æ·ÖÊ13
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/FavoriteCombine.csv
+fieldname set:0,0,Ï²ºÃÆ·ID
+fieldname set:1,1,ÏûºÄ²ÄÁÏ1
+fieldname set:2,2,ÏûºÄ²ÄÁÏ1ÊıÁ¿
+fieldname set:3,3,ÏûºÄ²ÄÁÏ2
+fieldname set:4,4,ÏûºÄ²ÄÁÏ2ÊıÁ¿
+fieldname set:5,5,ÏûºÄ²ÄÁÏ3
+fieldname set:6,6,ÏûºÄ²ÄÁÏ3ÊıÁ¿
+fieldname set:7,7,ÏûºÄ²ÄÁÏ4
+fieldname set:8,8,ÏûºÄ²ÄÁÏ4ÊıÁ¿
+fieldname set:9,9,²ÄÁÏÖÖÀà
+fieldname set:10,10,ÏûºÄÍ­±Ò
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Hero/HeroTallent.csv
+fieldname set:0,0,ID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,ÃèÊö
+fieldname set:3,3,µÈ¼¶
+fieldname set:4,4,Æ·ÖÊ
+fieldname set:5,5,Éı¼¶²ÄÁÏ
+fieldname set:6,6,Éı¼¶Í­±Ò
+fieldname set:7,7,Éı¼¶µÈ½×
+fieldname set:8,8,Ö÷¹«µÈ¼¶ÒªÇó
+fieldname set:9,9,¼¼ÄÜĞ§¹û
+fieldname set:10,10,µ±Ç°Ğ§¹ûÃèÊö
+fieldname set:11,11,ÏÂ¼¶Ğ§¹ûÃèÊö
+fieldname set:12,12,Í¼±ê
+fieldname set:13,13,Ç°¶ËID
+fieldname set:14,14,¼¼ÄÜÉı¼¶Ğ§¹û
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Legion/Gift.csv
+fieldname set:0,0,ID
+fieldname set:1,1,±êÌâ
+fieldname set:2,2,½±ÀøÕ¹Ê¾
+fieldname set:3,3,½±ÀøID
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Legion/LegionBoss.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,MAXHP
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Legion/LegionBossRankAward.csv
+fieldname set:0,0,ÅÅÃû
+fieldname set:1,1,Àñ°üID
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Legion/LegionCity.csv
+fieldname set:0,0,ÁìµØID
+fieldname set:1,1,ÁìµØÃû×Ö
+fieldname set:2,2,ÙºÂ»
+fieldname set:3,3,NPC¾üÍÅÃû
+fieldname set:4,4,±¨ÃûÏûºÄ
+fieldname set:5,5,ÍÅ³¤Ãû×Ö
+fieldname set:6,6,¾üÍÅµÈ¼¶
+fieldname set:7,7,µØÍ¼Í¼Æ¬
+fieldname set:8,8,ĞÇ½×¼Ó³É
+fieldname set:9,9,¾üÍÅICON
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/WorldBoss/WorldBoss.csv
+fieldname set:0,0,ID
+fieldname set:1,1,¿ªÆôÊ±¼ä
+fieldname set:2,2,¹ÖÎï×éID
+fieldname set:3,3,»÷É±Àñ°ü
+fieldname set:4,4,³ÖĞøÊ±¼ä
+fieldname set:5,5,Õ½¶·³¡¾°
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/WorldBoss/WorldBossHP.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,MAXHP
+fieldname set:2,2,·ÀÓù
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/WorldBoss/WorldBossRankAward.csv
+fieldname set:0,0,ÅÅÃû
+fieldname set:1,1,µôÂäID
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Arena/ArenaMonster.csv
+fieldname set:0,0,Ãû´Î
+fieldname set:1,1,ÕÊºÅ
+fieldname set:2,2,Ãû×Ö
+fieldname set:3,3,³õÊ¼Ó¢ĞÛ
+fieldname set:4,4,µÈ¼¶
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Arena/ArenaAward.csv
+fieldname set:0,0,ID
+fieldname set:1,1,minci
+fieldname set:2,2,rongyu
+fieldname set:3,3,tongqian
+fieldname set:4,4,yuanba
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Vip/Vip.csv
+fieldname set:0,0,VIPµÈ¼¶
+fieldname set:1,1,¼ÓËÙÉú²ú´ÎÊı
+fieldname set:2,2,ÌåÁ¦ÉÏÏŞ
+fieldname set:3,3,¹ºÂòÌåÁ¦´ÎÊı
+fieldname set:4,4,¹ºÂòÌôÕ½´ÎÊı
+fieldname set:5,5,¸ß¼¶ĞŞÁ¶´ÎÊı
+fieldname set:6,6,ÔùËÍºÃÓÑÌåÁ¦´ÎÊı
+fieldname set:7,7,½ÓÊÜºÃÓÑÌåÁ¦´ÎÊı
+fieldname set:8,8,ºÃÓÑÉÏÏŞ
+fieldname set:9,9,É¨µ´´ÎÊı
+fieldname set:10,10,×°±¸¸±±¾·­ÅÆ´ÎÊı
+fieldname set:11,11,Í¨ÌìËş´ÎÊı
+fieldname set:12,12,¾ÅÌì»Ã¾³ÖØÖÃ´ÎÊı
+fieldname set:13,13,Ä¤°İ´ÎÊı
+fieldname set:14,14,ÁìµØÊÕÈ¡´ÎÊı
+fieldname set:15,15,¾­Ñé
+fieldname set:16,16,FB¾­Ñé¼Ó³É
+fieldname set:17,17,µÈ¼¶ÌØÈ¨
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Task/Task.csv
+fieldname set:0,0,ÈÎÎñID
+fieldname set:1,1,ÈÎÎñÀàĞÍ
+fieldname set:2,2,ÈÎÎñÃû³Æ
+fieldname set:3,3,ÈÎÎñÃèÊö
+fieldname set:4,4,½ÓÈ¡Ìõ¼ş1
+fieldname set:5,5,½ÓÈ¡Ìõ¼ş2
+fieldname set:6,6,½ÓÈ¡Ìõ¼ş3
+fieldname set:7,7,½ÓÈ¡Ìõ¼ş4
+fieldname set:8,8,Íê³ÉÌõ¼ş
+fieldname set:9,9,ÈÎÎñÖØÖÃÖÜÆÚ
+fieldname set:10,10,¿ÉÍê³É´ÎÊı
+fieldname set:11,11,½±ÀøÀàĞÍ1
+fieldname set:12,12,½±ÀøÀàĞÍ2
+fieldname set:13,13,½±ÀøÀàĞÍ3
+fieldname set:14,14,¹ØÁª½çÃæ
+fieldname set:15,15,¹ØÁª½çÃæ2
+fieldname set:16,16,ÈÎÎñÍ¼±ê
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Guide/Guide.csv
+fieldname set:0,0,Òıµ¼ID
+fieldname set:1,1,Ç°ÖÃÒıµ¼
+fieldname set:2,2,ÊÇ·ñÇ¿ÖÆÒıµ¼
+fieldname set:3,3,µÈ¼¶ÏÂÏŞ
+fieldname set:4,4,µÈ¼¶ÉÏÏŞ
+fieldname set:5,5,´¥·¢ÊÂ¼ş
+fieldname set:6,6,×Ô¶¯Íê³É
+fieldname set:7,7,ÊÇ·ñÖØ¸´´¥·¢
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/DreamLand/DreamLandSection.csv
+fieldname set:0,0,ÕÂ½ÚID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,¹Ø¿¨ÁĞ±í
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/DreamLand/DreamLandScene.csv
+fieldname set:0,0,¹Ø¿¨ID
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,¹Ø¿¨ÀàĞÍ
+fieldname set:3,3,Õ½Á¦·¶Î§
+fieldname set:4,4,¹ÖÎï¼Ó³É
+fieldname set:5,5,±¦ÏäID
+fieldname set:6,6,¹ÖÎï×éID
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/DreamLand/DreamLandBox.csv
+fieldname set:0,0,±¦ÏäID
+fieldname set:1,1,¹Ì¶¨½±ÀøID
+fieldname set:2,2,ÉñÃØ½±Àø
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/Mail.csv
+fieldname set:0,0,¹«¸æID
+fieldname set:1,1,·¢ËÍÕß
+fieldname set:2,2,±êÌâ
+fieldname set:3,3,ÄÚÈİ
+fieldname set:4,4,½±Àø
+fieldname set:5,5,×îĞ¡µÈ¼¶
+fieldname set:6,6,×î¸ßµÈ¼¶
+fieldname set:7,7,¿ªÊ¼Ê±¼ä
+fieldname set:8,8,½ØÖÁÊ±¼ä
+fieldname set:9,9,±£ÁôÌìÊı
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Manor/ManorRes.csv
+fieldname set:0,0,ÁìµØ¿óID
+fieldname set:1,1,ÀàĞÍ
+fieldname set:2,2,Ãû³Æ
+fieldname set:3,3,¿ªÆôµÈ¼¶
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Manor/ManorResLevel.csv
+fieldname set:0,0,ID
+fieldname set:1,1,ÁìµØ¿óID
+fieldname set:2,2,ÀàĞÍ
+fieldname set:3,3,Ãû³Æ
+fieldname set:4,4,µÈ¼¶
+fieldname set:5,5,²úÁ¿
+fieldname set:6,6,Éı¼¶ÏûºÄ
+fieldname set:7,7,Éı¼¶Ê±¼ä
+fieldname set:8,8,×î´ó´¢Á¿
+fieldname set:9,9,×ÊÔ´Ãû
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Manor/ManorTieJiangPu.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,Éı¼¶»¨·ÑÍ­±Ò
+fieldname set:3,3,Éı¼¶Ê±¼ä
+fieldname set:4,4,¼ÀÁ¶Ê±¼ä
+fieldname set:5,5,²úÎï
+fieldname set:6,6,×ÊÔ´Ãû
+fieldname set:7,7,¿ªÆô¸ñ×ÓÊı
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Manor/ManorWuHunDian.csv
+fieldname set:0,0,µÈ¼¶
+fieldname set:1,1,Ãû³Æ
+fieldname set:2,2,Éı¼¶»¨·ÑÍ­±Ò
+fieldname set:3,3,Ë¢ĞÂ»¨·Ñ
+fieldname set:4,4,Éı¼¶Ê±¼ä
+fieldname set:5,5,¼ÀÁ¶Ê±¼ä
+fieldname set:6,6,²úÎï
+fieldname set:7,7,×ÊÔ´Ãû
+fieldname set:8,8,¿ªÆô¸ñ×ÓÊı
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Manor/ManorProtect.csv
+fieldname set:0,0,¶ÜID
+fieldname set:1,1,»¤¶ÜÃû
+fieldname set:2,2,ÏûºÄÔª±¦
+fieldname set:3,3,¹ºÂòCD
+fieldname set:4,4,±£»¤³ÖĞøÊ±¼ä
+fieldname set:5,5,¹ºÂòÌáÊ¾
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Arena/ArenaRefresh.csv
+fieldname set:0,0,mincirange
+fieldname set:1,1,targetone
+fieldname set:2,2,targetto
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/CoinTreeKnock.csv
+fieldname set:0,0,±©»÷±¶
+fieldname set:1,1,Íò·Ö¼¸ÂÊ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Shop/CoinTreeShakeCost.csv
+fieldname set:0,0,´ÎÊı
+fieldname set:1,1,ÏûºÄÔª±¦
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Item/ConvertCode.csv
+fieldname set:0,0,¶Ò»»Àñ°üID
+fieldname set:1,1,µôÂäID
+fieldname set:2,2,×¢ÊÍ
+fieldname set:3,3,Àñ°üÀàĞÍ
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Manor/ManorRefreshCost.csv
+fieldname set:0,0,Ë¢ĞÂ´ÎÊı
+fieldname set:1,1,ÏûºÄÍ­±Ò
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/OperateSystem/CheckIn.csv
+fieldname set:0,0,id
+fieldname set:1,1,ÔÂ·İ
+fieldname set:2,2,ÀÛ»ı´ÎÊı
+fieldname set:3,3,ÊÇ·ñ¿ÉÒÔÁìË«±¶
+fieldname set:4,4,ÁìË«±¶VipµÈ¼¶
+fieldname set:5,5,½±Àø
+fieldname set:6,6,ÃèÊö
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/OperateSystem/OperateActive.csv
+fieldname set:0,0,»î¶¯ID
+fieldname set:1,1,»î¶¯Í¼±ê
+fieldname set:2,2,»î¶¯ÉÏ±ê
+fieldname set:3,3,»î¶¯Ãû³Æ
+fieldname set:4,4,»î¶¯ÀàĞÍ
+fieldname set:5,5,»î¶¯ÃèÊö
+fieldname set:6,6,»î¶¯ÏêÇé
+fieldname set:7,7,¿ªÊ¼Ê±¼ä
+fieldname set:8,8,½áÊøÊ±¼ä
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/OperateSystem/GrowUpPlan.csv
+fieldname set:0,0,¼Æ»®ID
+fieldname set:1,1,Íê³ÉµÈ¼¶
+fieldname set:2,2,½±Àø
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/OperateSystem/AccumulatePayment.csv
+fieldname set:0,0,ÀÛ»ı³äÖµID
+fieldname set:1,1,³äÖµÄ¿±ê
+fieldname set:2,2,½±ÀøDropId
+fieldname set:3,3,½±Àø1
+fieldname set:4,4,½±Àø2
+fieldname set:5,5,½±Àø3
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/OperateSystem/AccumlateLogin.csv
+fieldname set:0,0,ÀÛ»ıµÇÂ¼ÌìÊı
+fieldname set:1,1,½±ÀøDropId
+fieldname set:2,2,½±Àø1
+fieldname set:3,3,½±Àø2
+fieldname set:4,4,½±Àø3
+fieldname set:5,5,½±Àø4
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/OperateSystem/DayPayment.csv
+fieldname set:0,0,»î¶¯id
+fieldname set:1,1,¿ªÊ¼Ê±¼ä
+fieldname set:2,2,½áÊøÊ±¼ä
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/OperateSystem/DayPaymentReward.csv
+fieldname set:0,0,»î¶¯id
+fieldname set:1,1,½±Àøid
+fieldname set:2,2,³äÖµÄ¿±ê
+fieldname set:3,3,½±ÀøDropId
+fieldname set:4,4,½±Àø1
+fieldname set:5,5,½±Àø2
+fieldname set:6,6,½±Àø3
+fieldname set:7,7,½±Àø4
+fieldname set:8,8,½±Àø5
+fieldname set:9,9,½±Àø6
+csv file name=/root/game/server/data/data_unicode//gamedata/csv/Comm/PhoneStream.csv
+fieldname set:0,0,ºÅÂë¶Î
+fieldname set:1,1,²úÆ·±àÂë
+do cleanUp
+2018-08-27 22:16:13|[TAF][~Communicator, communicator can only be destroyed when application exit.]
+terminate called after throwing an instance of 'taf::TC_ThreadMutex_Exception'
+  what():  [TC_ThreadMutex::lock] pthread_mutex_lock error :Invalid argument
+do cleanUp
+pure virtual method called
+terminate called recursively

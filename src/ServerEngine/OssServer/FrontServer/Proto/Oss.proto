@@ -1,0 +1,179 @@
+package Oss;
+
+option java_package = "com.myxk.OssWeb.shared";
+
+message SCMessage
+{
+	required int32 iCmd = 1;
+	optional CMD_OSS_GETSERVERLIST_SC scServerList = 2;
+	optional CMD_OSS_QUERYOVERALL_SC scQueryOverAll = 3;
+	optional CMD_OSS_QUERYONLINE_SC scQueryOnline = 4;
+	optional CMD_OSS_QUERYRETAIN_SC scRetain = 5;
+	optional CMD_OSS_QUERYLOSEPLAYER_SC scLosePlayer = 6;
+	optional CMD_OSS_QUERYGAMECOIN_SC scGameCoin = 7;
+	optional CMD_OSS_QUERYFIRSTCONSUME_SC scFirstConsume = 8;
+};
+
+message CSMessage
+{
+	required int32 iCmd = 1;
+	optional CMD_OSS_QUERYOVERALL_CS csQueryOverAll = 2;
+	optional CMD_OSS_QUERYONLINE_CS csQueryOnline = 3;
+	optional CMD_OSS_QUERYRETAIN_CS csQueryRetain = 4;
+	optional CMD_OSS_QUERYLOSEPLAYER_CS csQueryLosePlayer = 5;
+	optional CMD_OSS_QUERYGAMECOIN_CS csGameCoin = 6;
+	optional CMD_OSS_QUERYFIRSTCONSUME_CS csFirstConsume = 7;
+};
+
+enum Cmd
+{
+	CMD_OSS_GETSERVERLIST = 10001;
+	CMD_OSS_QUERYOVERALL = 10002; // 请求汇总信息
+	CMD_OSS_QUERYONLINE = 10003;
+	CMD_OSS_QUERYRETAIN = 1004;  // 留存查询
+	CMD_OSS_QUERYLOSEPLAYER = 1005;	//查询流失玩家信息
+	CMD_OSS_QUERYGAMECOIN = 1006;   //查询游戏币产出和消耗
+	CMD_OSS_QUERYFIRSTCONSUME = 1007; //查询首次消费情况
+};
+
+message ServerDesc
+{
+	required int32 iWorldID = 1;
+	required string strServerName = 2;
+};
+
+message CMD_OSS_GETSERVERLIST_SC
+{
+	repeated ServerDesc szServerList = 1;
+};
+
+message CMD_OSS_QUERYONLINE_CS
+{
+	required int32 dwBeginDate = 1;
+	required int32 dwEndDate = 2;
+	required int32 iWorldID = 3;
+};
+
+message OnlineOverAllItem
+{
+	required int32 dwDateTime = 1;
+	required int32 iMaxOnline = 2;
+	required int32 iAvgOnline = 3;
+};
+
+message OnlineDescItem
+{
+	required int32 dwDateTime = 1;
+	required int32 iOnlineCount = 2;
+};
+
+message CMD_OSS_QUERYONLINE_SC
+{
+	repeated OnlineOverAllItem szOnlineOverAll = 1;
+	repeated OnlineDescItem szOnlineDescItem = 2;
+};
+
+message CMD_OSS_QUERYOVERALL_CS
+{
+	required int32 dwBeginDate = 1;
+	required int32 dwEndDate = 2;
+	required int32 iWorldID = 3;
+};
+
+message OssOverAllItem
+{
+	required int32 dwDateTime = 1;
+	required int32 iMoney = 2;
+	required int32 iLoginAccount = 3;
+	required int32 iNewAccount = 4;
+	required int32 iPayAccount = 5;
+	required int32 iNewPayAccount = 6;
+	required int32 iWorldID = 7;
+};
+
+message CMD_OSS_QUERYOVERALL_SC
+{
+	repeated OssOverAllItem szOverAllItem = 1;
+};
+
+message CMD_OSS_QUERYRETAIN_CS
+{
+	required int32 dwBeginDate = 1;
+	required int32 dwEndDate = 2;
+	required int32 iWorldID = 3;
+};
+
+message RetainItem
+{
+	required int32 dwDateTime = 1;
+	required int32 iWorldID = 2;
+	required int32 iLoginCount = 3;
+	required int32 iNewCount = 4;
+	repeated string szRetain = 5; // 留存列表,从次日(2)到7日留存
+};
+
+message CMD_OSS_QUERYRETAIN_SC
+{
+	repeated RetainItem szRetainList = 1;
+};
+
+message CMD_OSS_QUERYLOSEPLAYER_CS
+{
+	required int32 dwBeginDate = 1;
+	required int32 dwEndDate = 2;
+	required int32 iWorldID = 3;
+};
+
+message LosePlayerItem
+{
+	required int32 iLevel = 1;
+	required int32 iCount = 2;
+};
+
+message CMD_OSS_QUERYLOSEPLAYER_SC
+{
+	repeated LosePlayerItem szLosePlayer = 1;
+	required int32  iTotolPlayer = 2;
+};
+
+enum GameCoinType
+{
+	en_GameCoin_Sliver = 1;
+	en_GameCoin_Gold = 2;
+};
+
+message CMD_OSS_QUERYGAMECOIN_CS
+{
+	required int32 dwBeginDate = 1;
+	required int32 dwEndDate = 2;
+	required int32 iWorldID = 3;
+	required int32 iGameCoinType= 4;
+};
+
+message GameCoinItem
+{
+	required string iReasonStr = 1;
+	required int32 iGameCoinCount = 2;
+	required int32 iUseTimes = 3;
+};
+message CMD_OSS_QUERYGAMECOIN_SC
+{
+	required int32 iGameCoinType = 1;
+	repeated GameCoinItem szProduct = 2;
+	repeated GameCoinItem szConsume = 3;
+};
+
+message CMD_OSS_QUERYFIRSTCONSUME_CS
+{
+	required int32 dwBeginDate = 1;
+	required int32 dwEndDate = 2;
+	required int32 iWorldID = 3;
+};
+message CMD_OSS_QUERYFIRSTCONSUME_SC
+{
+	repeated GameCoinItem szFirstConsume = 1;
+};
+
+
+
+

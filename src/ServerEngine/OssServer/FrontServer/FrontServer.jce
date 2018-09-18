@@ -1,0 +1,20 @@
+// Oss 前端Server , 负责处理Web请求
+
+module Oss
+{
+	enum enOssRet
+	{
+		en_Oss_RetOK = 0,
+		en_Oss_RetFail = 1,
+	};
+
+	interface OssFront
+	{
+		// 功能: OSS请求
+		// 参数: strReq 请求数据包, protobuf协议
+		// 参数: strRetData 返回结构，protobuf打包
+		int doOssRequest(string strReq, out string strRetData);
+	};
+};
+
+

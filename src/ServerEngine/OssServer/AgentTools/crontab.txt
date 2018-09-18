@@ -1,0 +1,20 @@
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+AgentToolPath=/home/mage/Documents/tool/JZServer/OssServer/AgentTools
+LogPath=/home/mage/Documents/tool/app/taf/app_log/
+
+# m h  dom mon dow   command
+ 0 2 * * * cd $AgentToolPath &&./UserCount.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ 10 2 * * * cd $AgentToolPath &&./NewUserCount.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ 20 2 * * * cd $AgentToolPath &&./ReChargeRoleCount.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ 30 2 * * * cd $AgentToolPath &&./ReChargeMoney.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ 40 2 * * * cd $AgentToolPath &&./NewReChargeRoleCount.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ */60 * * * * cd $AgentToolPath &&./Online.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ */60 * * * * cd $AgentToolPath &&./MaxOnline.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ 58 23 * * * cd $AgentToolPath &&./MaxOnline.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+
+ 0 1 * * * cd $AgentToolPath&&./LoginSet.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ 0 2 * * * cd $AgentToolPath&&./Retain.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ 
+ 0 2 * * * cd $AgentToolPath&&./LosePlayer.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ 0 2 * * * cd $AgentToolPath&&./GameCoin.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
+ 0 2 * * * cd $AgentToolPath&&./FirstConsume.sh ServerEngine GameServer 0 $LogPath 127.0.0.1 6378>>AgentTool.log 2>&1
